@@ -82,14 +82,20 @@ plugins=(
   fzf
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-autosuggestions
   ssh-agent
   python
   golang 
   kubectl
+  kustomize
+  docker
   terraform
   ansible
-  kustomize
+  yarn
+  web-search
+  jsontools
+  macports
+  node
+  sudo
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -122,9 +128,9 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Alias
-alias github="cd ~/gihtub.com/"
-alias hyq="cd ~/gihtub.com/hanyouqing/"
-alias work="cd ~/gihtub.com/work/"
+alias github="cd ~/github.com/"
+alias hyq="cd ~/github.com/hanyouqing/"
+alias work="cd ~/github.com/work/"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

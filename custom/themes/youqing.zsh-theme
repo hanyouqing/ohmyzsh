@@ -3,9 +3,10 @@
 # @reference:
 #   https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
 ZSH_PROMPT_NEWLINE=$'\n'
-PROMPT='%{$fg[green]%}%n@%m:%{$fg_bold[blue]%}%~ $(git_prompt_info)%{$reset_color%}${ZSH_PROMPT_NEWLINE}%(!.#.$) '
+# PROMPT='%{$fg[green]%}%n@%m:%{$fg_bold[blue]%}%~ $(git_prompt_info)%{$reset_color%}${ZSH_PROMPT_NEWLINE}%(!.#.$) '
+PROMPT='%{$fg_bold[blue]%}%~ $(git_prompt_info)%{$reset_color%} %{$fg[yellow]%}<$(k config current-context)> ${ZSH_PROMPT_NEWLINE}%(!.#.$)%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[yellow]%}*%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[cyan]%}*%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}✔%{$fg[red]%}"
